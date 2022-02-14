@@ -3,6 +3,7 @@ package lisp
 import scala.io.StdIn.readLine
 
 def loop(): Unit = {
+  print("> ")
   val input = readLine()
   expr.parse(input) match
     case Some((e,"")) =>
